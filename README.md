@@ -29,5 +29,13 @@ To activate the virtual environment, run commmand
 Run this command in the python virtual environment to install the required libraries
 
 ```python
-pip install torch torchvision matplotlib
+pip install torch torchvision matplotlib ipykernel
+```
+
+## Upgrade pip in the virtual environment
+
+Run this command
+
+```powershell
+.venv\Scripts\python.exe -m pip install --upgrade pip
 ```
