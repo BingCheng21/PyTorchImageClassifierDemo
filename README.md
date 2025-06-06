@@ -39,3 +39,18 @@ Run this command
 ```powershell
 .venv\Scripts\python.exe -m pip install --upgrade pip
 ```
+
+## Support import functions from one notebook to another
+
+First, you need the import-ipynb library. Make suer that you are running the virtual python enviornment. Then run this command
+
+```powershell
+pip install import-ipynb
+```
+
+To import the notebook, add these lines
+
+```python
+import import-ipynb
+from SimplCNN import SimpleCNN
+```
