@@ -2,6 +2,7 @@
 
 import torch
 
+
 # Path to the folder when the model is stored
 MODEL_FOLDER = "models/cnn"
 # Model file name
