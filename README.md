@@ -54,3 +54,35 @@ To import the notebook, add these lines
 import import-ipynb
 from SimplCNN import SimpleCNN
 ```
+
+## List all required Python libraries and install them with pip
+
+1. Create a plain text file named requirements.txt and list each package you need ona  new line. Here is an example:
+
+```txt
+torch
+torchvision
+numpy
+matplotlib
+opencv-python
+scikit-learn
+```
+
+You can also specify versions if needed:
+
+```txt
+torch==2.2.0
+opencv-python>=4.8.0
+```
+
+If you already installed your packages and want to save your environment, run this command
+
+```python
+pip freeze > requirement.txt
+```
+
+2. Run this command in the same directory as requirements.txt
+
+```python
+pip install -r requirements.txt
+``` 
