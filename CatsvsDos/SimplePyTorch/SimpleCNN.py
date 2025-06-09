@@ -7,8 +7,6 @@ import os
 import json
 
 
-
-# --- MODEL DEFINITION ---
 # Create a new SimpleCNN class inheriting the nn.Module class
 class SimpleCNN(nn.Module):
 
@@ -77,6 +75,8 @@ class SimpleCNN(nn.Module):
 
             print(f"Epoch {epoch+1}, Loss: {running_loss:.4f}")
 
+        # Evaluate model
+        self.__evaluate_model(loaders)
 
     # Prefixing the function name with __ to make this function private
     def __get_data_loaders(self, data_folder):
